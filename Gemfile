@@ -5,6 +5,7 @@ gem 'bson_ext'
 gem 'origin'
 gem 'mongorm'
 gem 'warden'
+gem 'haml'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

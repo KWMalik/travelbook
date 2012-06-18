@@ -1,0 +1,27 @@
+= form_for User.new, class: 'form-horizontal' do |f|
+  .control-group
+    .control-label
+      = f.label :email
+    .controls
+      = f.email_field :email
+
+  .control-group
+    .control-label
+      = f.label :name
+    .controls
+      = f.text_field :name
+
+  .control-group
+    .control-label
+      = f.label :password
+    .controls
+      = f.password_field :password
+
+  .control-group
+    .control-label
+      = f.label :password_confirmation
+    .controls
+      = password_field_tag 'password_confirmation'
+
+  .form-actions
+    = f.submit 'Sign Up'
